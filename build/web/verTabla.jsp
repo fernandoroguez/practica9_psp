@@ -4,6 +4,9 @@
     Author     : alumno
 --%>
 
+<%@page import="Modelo.ListaElementos"%>
+<%@page import="Modelo.Elemento"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -13,32 +16,30 @@
     <link rel="stylesheet" href="tablas.css">
 </head>
 <body>
-
-    <table>
+<table>
         <thead>
             <tr>
-                <th id="impar">Europa</th>
-                <th>Asia</th>
-                <th id="impar">Oceania</th>
+                <th>Nombre</th>
+                <th>Grupo</th>
+                <th>Numero</th>
+                <th>Fecha</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td id="impar">España</td>
-                <td>Japón</td>
-                <td id="impar">Australia</td>
+    <%
+        ArrayList<Elemento> lista;
+        ListaElementos li = new ListaElementos();
+        lista = li.getElemento();
+            for (Elemento elem : lista) {%>
+            <tr class="hover">
+                    <td ><%=elem.getNombre()%> </td>
+                 <td ><%=elem.getGrupo()%></td>
+                  <td ><%=elem.getNumero()%></td>
+                   <td ><%=elem.getFecha()%></td>
             </tr>
-            <tr>
-                <td id="impar">Noruega</td>
-                <td>China</td>
-                <td id="impar">Nueva Zelanda</td>
-            </tr>
-            <tr>
-                <td id="impar">Alemania</td>
-                <td>Indonesia</td>
-                <td id="impar">Fiyi</td>
-            </tr>
-            <!-- Agregar más filas según sea necesario -->
+            <%
+                }
+             %>
         </tbody>
     </table>
     
