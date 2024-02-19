@@ -2,20 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Jose%20Abel/Documents/NetBeansProjects/practica9/web/aspecto.css</file>
+            <file>file:/C:/Users/Jose%20Abel/Documents/NetBeansProjects/practica9/web/verTabla.jsp</file>
+            <file>file:/C:/Users/Jose%20Abel/Documents/NetBeansProjects/practica9/web/index.jsp</file>
+            <file>file:/C:/Users/Jose%20Abel/Documents/NetBeansProjects/practica9/web/verZodiaco.jsp</file>
+            <file>file:/C:/Users/Jose%20Abel/Documents/NetBeansProjects/practica9/web/verLista.jsp</file>
+        </group>
         <group name="tema 8">
             <file>file:/C:/Users/ferna/Desktop/2%20DAM/PSP/practica9/practica9/web/lista.css</file>
             <file>file:/C:/Users/ferna/Desktop/2%20DAM/PSP/practica9/practica9/web/verLista.jsp</file>
             <file>file:/C:/Users/ferna/Desktop/2%20DAM/PSP/practica9/practica9/web/tablas.css</file>
             <file>file:/C:/Users/ferna/Desktop/2%20DAM/PSP/practica9/practica9/web/verTabla.jsp</file>
-        </group>
-        <group>
-            <file>file:/home/alumno/Descargas/practica9/web/verLista.jsp</file>
-            <file>file:/home/alumno/Descargas/practica9/src/java/Modelo/ListaElementos.java</file>
-            <file>file:/home/alumno/Descargas/practica9/src/java/Modelo/Elemento.java</file>
-            <file>file:/home/alumno/Descargas/practica9/src/java/zodiaco/CalcularZodiaco.java</file>
-            <file>file:/home/alumno/Descargas/practica9/web/verZodiaco.jsp</file>
-            <file>file:/home/alumno/Descargas/practica9/web/index.jsp</file>
-            <file>file:/home/alumno/Descargas/practica9/web/verTabla.jsp</file>
+            <file>file:/C:/Users/ferna/Desktop/2%20DAM/PSP/practica9/practica9/web/index.jsp</file>
+            <file>file:/C:/Users/ferna/Desktop/2%20DAM/PSP/practica9/practica9/src/java/Modelo/Elemento.java</file>
+            <file>file:/C:/Users/ferna/Desktop/2%20DAM/PSP/practica9/practica9/src/java/Modelo/ListaElementos.java</file>
         </group>
     </open-files>
 </project-private>

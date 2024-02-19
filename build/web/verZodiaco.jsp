@@ -4,8 +4,6 @@
     Author     : alumno
 --%>
 
-<%@page import="Modelo.Elemento"%>
-<%@page import="java.util.ArrayList"%>
 <%@page import="java.util.Date"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -16,7 +14,7 @@
     </head>
     <body>
         <%@page import="zodiaco.CalcularZodiaco" %>
-        
+        <% 
             String Nombre = request.getParameter("nombre");
             String Apellido = request.getParameter("apellido");
             String FechaNacimiento = request.getParameter("FechaNacimiento");
@@ -27,7 +25,7 @@
             CalcularZodiaco calcular = new CalcularZodiaco(FechaNacimiento);
             ZodiacoNombre = calcular.getZodiaco();
             edad = calcular.getEdad();
-        
+        %>
         
         <h1>Datos personales y Zodiaco</h1>
         <section>

@@ -3,6 +3,8 @@
     Created on : 12-feb-2024, 20:16:08
     Author     : alumno
 --%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
 <%@page import="Modelo.ListaElementos"%>
 <%@page import="Modelo.Elemento"%>
 <%@page import="java.util.ArrayList"%>
@@ -25,7 +27,8 @@
             <h3>Paises</h3>
             <hr>
 
-            <%ArrayList<Elemento> listaE;
+            <%DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyy");  
+                ArrayList<Elemento> listaE;
              ListaElementos l= new ListaElementos();
              listaE=l.getElemento();
               for (Elemento elemento: listaE){ %>
@@ -36,7 +39,7 @@
                     <h4><%=elemento.getNombre()%></h4>
                     <p>Grupo:<%=elemento.getGrupo()%>.</p>
                     <p>Numero:<%=elemento.getNumero()%>.</p>
-                    <p>Fecha:<%=elemento.getFecha()%>.</p>
+                    <p>Fecha:<%=dateFormat.format(elemento.getFecha())%>.</p>
                     <p>Imagen:<%=elemento.getFoto()%></p>
                 </article>  
                 
@@ -58,7 +61,7 @@
                     <h4><%=elemento.getNombre()%></h4>
                     <p>Grupo:<%=elemento.getGrupo()%>.</p>
                     <p>Numero:<%=elemento.getNumero()%>.</p>
-                    <p>Fecha:<%=elemento.getFecha()%>.</p>
+                    <p>Fecha:<%=dateFormat.format(elemento.getFecha())%>.</p>
                     <p>Imagen:<%=elemento.getFoto()%></p>
                 </article>  
                 
